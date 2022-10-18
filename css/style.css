@@ -6,6 +6,22 @@
     font-family: "JamimaMedium";
     src: url("../fonts/Jamima/fonts/Jemima-Medium.ttf");
 }
+@font-face {
+    font-family: "JamimaItalic";
+    src: url("../fonts/Jamima/fonts/Jemima-ExtraBoldItalic.ttf")
+}
+@font-face {
+    font-family: "Cinzel_regular";
+    src: url("../fonts/Cinzel/cinzel_regular.ttf");
+}
+@font-face {
+    font-family: "Cinzel_bold";
+    src: url("../fonts/Cinzel/cinzel_bold.ttf");
+}
+@font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasNeue/BebasNeue\ Bold.ttf");
+}
 body {
     margin: 0;
     padding: 0;
@@ -25,7 +41,7 @@ h1 {
     color: #ffffff;
     font-size: 4rem;
     /*font-family: 'Times New Roman', Times, serif;*/
-    font-family: 'JemimaMedium';
+    font-family: 'BebasBold';
     margin-top: 10%;
 }
 .news{
@@ -47,7 +63,7 @@ article p {
     font-family: 'Jamima';
 }
 article a:hover {
-    color: #377c7c;
+    color: #14a08d;;
 }
 article h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,5 +99,24 @@ footer .links > a {
     color: rgb(108, 117, 125);
     font-family: 'Times New Roman', Times, serif;
 }
-
- 
+.lgu-img {
+    object-position: 0 -120px;
+}
+p a:link {
+    color: #3a59e4
+}
+p a:visited {
+    color:#14a08d;
+    border-bottom: 2px  dashed;
+}
+.amazon-img {
+    object-position: top;
+}
+article:nth-child(even) {
+    background-color: #c2c7ca;
+}
+article:nth-child(-n+2) h2::before {
+    content: "new ";
+    font-family: 'JamimaItalic';
+    color: red;
+}
